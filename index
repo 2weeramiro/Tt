@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú Lateral -->
+    <div class="menu-lateral">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo">
+        <a href="#"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-tv"></i></a>
+        <a href="#"><i class="fas fa-film"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-cog"></i></a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="contenido">
+
+        <!-- Portada Principal -->
+        <div class="portada" style="background-image: url('images/stranger-things.jpg');">
+            <div class="info-portada">
+                <h1>Stranger Things</h1>
+                <p>Cuando un niño desaparece, una pequeña ciudad descubre un misterio que involucra experimentos secretos, fuerzas sobrenaturales y una extraña niña.</p>
+                <button onclick="window.location.href='movie.html'"><i class="fas fa-play"></i> Play</button>
+                <button onclick="window.location.href='movie.html'"><i class="fas fa-info-circle"></i> Más Info</button>
+            </div>
+        </div>
+
+        <!-- Secciones de Películas -->
+        <h2>Películas Más Vistas</h2>
+        <div class="carrusel">
+            <img src="images/murder-mystery.jpg" alt="Murder Mystery" onclick="window.location.href='movie.html'">
+            <img src="images/our-planet.jpg" alt="Our Planet" onclick="window.location.href='movie.html'">
+            <img src="images/tidying-up.jpg" alt="Tidying Up" onclick="window.location.href='movie.html'">
+            <img src="images/dead-to-me.jpg" alt="Dead to Me" onclick="window.location.href='movie.html'">
+        </div>
+
+        <h2>Series Más Populares</h2>
+        <div class="carrusel">
+            <img src="images/raising-dion.jpg" alt="Raising Dion" onclick="window.location.href='movie.html'">
+            <img src="images/growing-up.jpg" alt="Growing Up" onclick="window.location.href='movie.html'">
+            <img src="images/the-irishman.jpg" alt="The Irishman" onclick="window.location.href='movie.html'">
+            <img src="images/homecoming.jpg" alt="Homecoming" onclick="window.location.href='movie.html'">
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

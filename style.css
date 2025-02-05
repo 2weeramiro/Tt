@@ -1,0 +1,153 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Menú Lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-lateral a {
+    color: #b3b3b3;
+    font-size: 24px;
+    margin: 20px 0;
+    transition: color 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: #fff;
+}
+
+.logo {
+    width: 40px;
+    margin-bottom: 40px;
+}
+
+/* Contenido Principal */
+.contenido {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+/* Portada Principal */
+.portada {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-portada {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info-portada h1 {
+    font-size: 48px;
+}
+
+.info-portada p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: #e50914;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b20710;
+}
+
+/* Carrusel de Películas */
+.carrusel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 20px 0;
+}
+
+.carrusel img {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.carrusel img:hover {
+    transform: scale(1.1);
+}
+
+/* Página de Detalles */
+.detalle-portada {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.info-detalle {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.info-detalle h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.info-detalle p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.btn-reproducir {
+    margin: 20px 0;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.opciones li {
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.opciones li i {
+    margin-right: 10px;
+}
